@@ -35,6 +35,6 @@ jobs:
           first_ssh: |
             sudo curl -l -u admin:Root123$  http://localhost:8080/job/build-job/build?token=token1
           scp: |
-            './target/*.war' => /tmp
-          last_ssh:
+            './target/*.war' => /tmp 
+          last_ssh: # test
             ls -al /tmp       
